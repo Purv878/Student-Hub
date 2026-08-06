@@ -8,6 +8,7 @@ Student Hub Portal is a simple HTML project developed for Web Development Practi
 - Registration
 - Login
 - Dashboard
+- Profile
 - Attendance
 - Fees Details
 - Results
