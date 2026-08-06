@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees Details - Student Hub Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkgreen;
+        }
+
+        hr {
+            border: 1px solid gray;
+        }
+
+        table {
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        button {
+            background-color: royalblue;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        p {
+            color: gray;
+        }
+
+        /* Status Colors */
+        .paid {
+            background-color: lightgreen;
+        }
+
+        .pending {
+            background-color: lightcoral;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <center>
+        <h1>STUDENT HUB PORTAL</h1>
+        <hr width="80%">
+    </center>
+
+    <!-- Navigation -->
+    <center>
+        <table border="1" cellpadding="10" cellspacing="0" width="60%">
+            <tr align="center">
+                <td><a href="index.html">Home</a></td>
+                <td><a href="dashboard.html">Dashboard</a></td>
+                <td><a href="about.html">About Us</a></td>
+                <td><a href="contact.html">Contact Us</a></td>
+                <td><a href="login.html">Logout</a></td>
+            </tr>
+        </table>
+    </center>
+
+    <br><br>
+
+    <!-- Fees Details -->
+    <center>
+
+        <h2>Student Fees Details</h2>
+
+        <table border="1" cellpadding="10" cellspacing="0" width="80%">
+
+            <tr>
+                <th>Semester</th>
+                <th>Total Fees</th>
+                <th>Paid Fees</th>
+                <th>Pending Fees</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Semester 1</td>
+                <td>₹45,000</td>
+                <td>₹45,000</td>
+                <td>₹0</td>
+                <td class="paid">Paid</td>
+            </tr>
+
+            <tr>
+                <td>Semester 2</td>
+                <td>₹45,000</td>
+                <td>₹45,000</td>
+                <td>₹0</td>
+                <td class="paid">Paid</td>
+            </tr>
+
+            <tr>
+                <td>Semester 3</td>
+                <td>₹50,000</td>
+                <td>₹25,000</td>
+                <td>₹25,000</td>
+                <td class="pending">Pending</td>
+            </tr>
+
+        </table>
+
+        <br><br>
+
+        <a href="dashboard.html">
+            <button>Back to Dashboard</button>
+        </a>
+
+        &nbsp;&nbsp;
+
+        <a href="index.html">
+            <button>Home</button>
+        </a>
+
+    </center>
+
+    <br><br>
+
+    <hr width="80%">
+
+    <!-- Footer -->
+    <center>
+        <p>© 2026 Student Hub Portal | All Rights Reserved</p>
+    </center>
+
+</body>
+
+</html>

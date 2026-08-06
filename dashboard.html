@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Student Hub Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkgreen;
+        }
+
+        h3 {
+            color: darkblue;
+        }
+
+        hr {
+            border: 1px solid gray;
+        }
+
+        table {
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        td {
+            padding: 20px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        button {
+            background-color: royalblue;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        p {
+            color: gray;
+        }
+
+        /* Dashboard Box Colors */
+        .attendance {
+            background-color: #d4edda;
+        }
+
+        .fees {
+            background-color: #fff3cd;
+        }
+
+        .timetable {
+            background-color: #d1ecf1;
+        }
+
+        .result {
+            background-color: #f8d7da;
+        }
+        .profile {
+            background-color: #e2e3e5;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <center>
+        <h1>STUDENT HUB PORTAL</h1>
+        <hr width="80%">
+    </center>
+
+    <!-- Navigation -->
+    <center>
+        <table border="1" cellpadding="10" cellspacing="0" width="60%">
+            <tr align="center">
+                <td><a href="index.html">Home</a></td>
+                <td><a href="about.html">About Us</a></td>
+                <td><a href="contact.html">Contact Us</a></td>
+                <td><a href="login.html">Logout</a></td>
+                <td><a href="profile.html">Profile</a></td>
+            </tr>
+        </table>
+    </center>
+
+    <br><br>
+
+    <center>
+
+        <h2>Student Dashboard</h2>
+
+        <table border="1" cellpadding="20" cellspacing="15">
+
+            <tr>
+
+                <td class="attendance" width="250">
+                    <h3>Student Attendance</h3>
+                    <br>
+                    <a href="attendance.html">
+                        <button>View Attendance</button>
+                    </a>
+                </td>
+
+                <td class="fees" width="250">
+                    <h3>Student Fees Details</h3>
+                    <br>
+                    <a href="fees.html">
+                        <button>View Fees</button>
+                    </a>
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td class="timetable" width="250">
+                    <h3>Time Table</h3>
+                    <br>
+                    <a href="timetable.html">
+                        <button>View Time Table</button>
+                    </a>
+                </td>
+
+                <td class="result" width="250">
+                    <h3>Results</h3>
+                    <br>
+                    <a href="result.html">
+                        <button>View Results</button>
+                    </a>
+                </td>
+
+            </tr>
+
+        </table>
+
+        <br><br>
+
+        <a href="index.html">
+            <button>Back to Home</button>
+        </a>
+
+    </center>
+
+    <br><br>
+
+    <hr width="80%">
+
+    <!-- Footer -->
+    <center>
+        <p>© 2026 Student Hub Portal | All Rights Reserved</p>
+    </center>
+
+</body>
+
+</html>

@@ -5,6 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results - Student Hub Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkgreen;
+        }
+
+        hr {
+            border: 1px solid gray;
+        }
+
+        table {
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        button {
+            background-color: royalblue;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        p {
+            color: gray;
+        }
+
+        /* Grade Colors */
+        .aplus {
+            background-color: lightgreen;
+            font-weight: bold;
+        }
+
+        .a {
+            background-color: lightyellow;
+            font-weight: bold;
+        }
+
+        .summary {
+            background-color: lightcyan;
+            font-weight: bold;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -37,7 +114,7 @@
 
         <table border="1" cellpadding="10" cellspacing="0" width="80%">
 
-            <tr bgcolor="lightgray">
+            <tr>
                 <th>Subject</th>
                 <th>Internal Marks</th>
                 <th>External Marks</th>
@@ -45,52 +122,52 @@
                 <th>Grade</th>
             </tr>
 
-            <tr align="center">
+            <tr>
                 <td>Web Development</td>
                 <td>28</td>
                 <td>62</td>
                 <td>90</td>
-                <td>A+</td>
+                <td class="aplus">A+</td>
             </tr>
 
-            <tr align="center">
+            <tr>
                 <td>Java Programming</td>
                 <td>27</td>
                 <td>60</td>
                 <td>87</td>
-                <td>A</td>
+                <td class="a">A</td>
             </tr>
 
-            <tr align="center">
+            <tr>
                 <td>Computer Networks</td>
                 <td>26</td>
                 <td>58</td>
                 <td>84</td>
-                <td>A</td>
+                <td class="a">A</td>
             </tr>
 
-            <tr align="center">
+            <tr>
                 <td>Data Structures</td>
                 <td>29</td>
                 <td>63</td>
                 <td>92</td>
-                <td>A+</td>
+                <td class="aplus">A+</td>
             </tr>
 
-            <tr align="center">
+            <tr>
                 <td>Database Management</td>
                 <td>28</td>
                 <td>61</td>
                 <td>89</td>
-                <td>A</td>
+                <td class="a">A</td>
             </tr>
 
-            <tr align="center">
+            <tr class="summary">
                 <th colspan="3">Overall Percentage</th>
                 <th colspan="2">88.4%</th>
             </tr>
 
-            <tr align="center">
+            <tr class="summary">
                 <th colspan="3">CGPA</th>
                 <th colspan="2">8.85</th>
             </tr>

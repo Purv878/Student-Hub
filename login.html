@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Student Hub Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkgreen;
+        }
+
+        hr {
+            border: 1px solid gray;
+        }
+
+        table {
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 180px;
+            padding: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: royalblue;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkblue;
+        }
+
+        button {
+            background-color: royalblue;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        p {
+            color: gray;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <center>
+        <h1>STUDENT HUB PORTAL</h1>
+        <hr width="80%">
+    </center>
+
+    <center>
+        <table border="1" cellpadding="10" cellspacing="0" width="50%">
+            <tr align="center">
+                <td><a href="index.html">Home</a></td>
+                <td><a href="about.html">About Us</a></td>
+                <td><a href="contact.html">Contact Us</a></td>
+            </tr>
+        </table>
+    </center>
+
+    <br><br>
+
+    <center>
+
+        <h2>Student Login</h2>
+
+        <form action="dashboard.html">
+
+            <table cellpadding="10">
+
+                <tr>
+                    <td>User ID :</td>
+                    <td>
+                        <input type="text" name="userid" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Password :</td>
+                    <td>
+                        <input type="password" name="password" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Login">
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+
+        <br>
+
+        <p>Don't have an account?</p>
+
+        <a href="register.html">
+            <button>Register Here</button>
+        </a>
+
+    </center>
+
+    <br><br>
+
+    <hr width="80%">
+
+    <center>
+        <p>© 2026 Student Hub Portal</p>
+    </center>
+
+</body>
+
+</html>

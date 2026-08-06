@@ -5,6 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Table - Student Hub Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkgreen;
+        }
+
+        hr {
+            border: 1px solid gray;
+        }
+
+        table {
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+
+        .break {
+            background-color: lightyellow;
+            font-weight: bold;
+        }
+
+        .lab {
+            background-color: rgb(142, 234, 142);
+        }
+
+        .counselling {
+            background-color: lightcyan;
+        }
+
+        .elective {
+            background-color: lightpink;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        button {
+            background-color: royalblue;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        p {
+            color: gray;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -54,11 +133,11 @@
             <th rowspan="2">Monday</th>
             <td>ITUE203</td>
             <td>ITUE203</td>
-            <td rowspan="12">Lunch Break</td>
+            <td rowspan="12" class="break">Lunch Break</td>
             <td>ITUC201</td>
             <td>CSUC201</td>
-            <td rowspan="12">Short Break</td>
-            <td colspan="2">Laboratory Session</td>
+            <td rowspan="12" class="break">Short Break</td>
+            <td colspan="2" class="lab">Laboratory Session</td>
         </tr>
 
         <tr>
@@ -66,12 +145,12 @@
             <td>WDF(T)</td>
             <td>FCN(T)</td>
             <td>FDSA(T)</td>
-            <td colspan="2">D1-Batch-CEUE203-OOP(P)</td>
+            <td colspan="2" class="lab">D1-Batch-CEUE203-OOP(P)</td>
         </tr>
 
         <tr>
             <th rowspan="2">Tuesday</th>
-            <td colspan="2">Laboratory Session</td>
+            <td colspan="2" class="lab">Laboratory Session</td>
             <td>ITUE203</td>
             <td>CEUE203</td>
             <td>HSUV201</td>
@@ -79,7 +158,7 @@
         </tr>
 
         <tr>
-            <td colspan="2">D1-Batch-ITUC203-WDF(P)</td>
+            <td colspan="2" class="lab">D1-Batch-ITUC203-WDF(P)</td>
             <td>WDF(T)</td>
             <td>OOP(T)</td>
             <td>HS</td>
@@ -88,15 +167,15 @@
 
         <tr>
             <th rowspan="2">Wednesday</th>
-            <td colspan="2">Laboratory Session</td>
+            <td colspan="2" class="lab">Laboratory Session</td>
             <td colspan="2">SC</td>
             <td>MSUD203</td>
             <td>ITUC201</td>
         </tr>
 
         <tr>
-            <td colspan="2">D1-Batch-ITUC201-FCN(P)</td>
-            <td colspan="2">Student Counselling</td>
+            <td colspan="2" class="lab">D1-Batch-ITUC201-FCN(P)</td>
+            <td colspan="2" class="counselling">Student Counselling</td>
             <td>Maths(T)</td>
             <td>FCN(T)</td>
         </tr>
@@ -107,7 +186,7 @@
             <td>CSUC201</td>
             <td>ITUE203</td>
             <td>MSUD203</td>
-            <td colspan="2">Laboratory Session</td>
+            <td colspan="2" class="lab">Laboratory Session</td>
         </tr>
 
         <tr>
@@ -115,7 +194,7 @@
             <td>FDSA(T)</td>
             <td>WDF(T)</td>
             <td>Maths(T)</td>
-            <td colspan="2">D1-Batch-ITUE203-WDF(P)</td>
+            <td colspan="2" class="lab">D1-Batch-ITUE203-WDF(P)</td>
         </tr>
 
         <tr>
@@ -124,7 +203,7 @@
             <td>MSUD203</td>
             <td>CEUE203</td>
             <td>ITUC201</td>
-            <td colspan="2">Laboratory Session</td>
+            <td colspan="2" class="lab">Laboratory Session</td>
         </tr>
 
         <tr>
@@ -132,21 +211,20 @@
             <td>Maths(T)</td>
             <td>OOP(T)</td>
             <td>FCN(T)</td>
-            <td colspan="2">D1-Batch-CSUC201-FDSA(P)</td>
+            <td colspan="2" class="lab">D1-Batch-CSUC201-FDSA(P)</td>
         </tr>
 
         <tr>
             <th rowspan="2">Saturday</th>
-            <td rowspan="2">University Elective -1</td>
-            <td rowspan="2">University Elective -1</td>
-            <td rowspan="2">University Elective -1</td>
-            <td rowspan="2">University Elective -1</td>
-            <td rowspan="2">Skill Enhancement Session</td>
-            <td rowspan="2">Skill Enhancement Session</td>
+            <td rowspan="2" class="elective">University Elective -1</td>
+            <td rowspan="2" class="elective">University Elective -1</td>
+            <td rowspan="2" class="elective">University Elective -1</td>
+            <td rowspan="2" class="elective">University Elective -1</td>
+            <td rowspan="2" class="elective">Skill Enhancement Session</td>
+            <td rowspan="2" class="elective">Skill Enhancement Session</td>
         </tr>
 
-        <tr>
-        </tr>
+        <tr></tr>
 
     </table>
 
