@@ -1,0 +1,275 @@
+/* ================================
+   STUDENT HUB PORTAL - STYLE CSS
+   ================================ */
+
+
+/* ---------- Common Body ---------- */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 20px;
+}
+
+
+/* ---------- Headings ---------- */
+
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+h3 {
+    color: darkblue;
+}
+
+
+/* ---------- Horizontal Line ---------- */
+
+hr {
+    border: 1px solid gray;
+}
+
+
+/* ---------- Tables ---------- */
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    padding: 10px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+
+/* ---------- Navigation ---------- */
+
+.nav td {
+    background-color: #d6eaff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav td:hover {
+    background-color: #9fd0ff;
+}
+
+
+/* ---------- Links ---------- */
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
+
+
+/* ---------- Buttons ---------- */
+
+button {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+
+/* ---------- Paragraph ---------- */
+
+p {
+    color: gray;
+}
+
+
+/* ---------- Input Fields ---------- */
+
+input[type="text"],
+input[type="password"] {
+    width: 180px;
+    padding: 5px;
+}
+
+
+/* ---------- Submit Button ---------- */
+
+input[type="submit"] {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+
+/* =================================
+   ABOUT US / CONTACT US
+   ================================= */
+
+.content td,
+.contact td {
+    padding: 20px;
+}
+
+.content p,
+.contact p {
+    color: #333;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.footer {
+    color: gray;
+    font-size: 14px;
+}
+
+
+/* =================================
+   DASHBOARD
+   ================================= */
+
+.attendance {
+    background-color: #d4edda;
+}
+
+.fees {
+    background-color: #fff3cd;
+}
+
+.timetable {
+    background-color: #d1ecf1;
+}
+
+.result {
+    background-color: #f8d7da;
+}
+
+.profile {
+    background-color: #e2e3e5;
+}
+
+
+/* =================================
+   PROFILE
+   ================================= */
+
+.profile-box {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.top-section {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.photo-box {
+    border: 1px solid black;
+    width: 160px;
+    height: 200px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.photo-box img {
+    width: 130px;
+    height: 150px;
+}
+
+.profile-box td {
+    padding: 12px;
+    text-align: left;
+}
+
+
+/* =================================
+   FEES
+   ================================= */
+
+.paid {
+    background-color: lightgreen;
+}
+
+.pending {
+    background-color: lightcoral;
+}
+
+
+/* =================================
+   RESULTS
+   ================================= */
+
+.aplus {
+    background-color: lightgreen;
+    font-weight: bold;
+}
+
+.a {
+    background-color: lightyellow;
+    font-weight: bold;
+}
+
+.summary {
+    background-color: lightcyan;
+    font-weight: bold;
+}
+
+
+/* =================================
+   TIME TABLE
+   ================================= */
+
+.break {
+    background-color: lightyellow;
+    font-weight: bold;
+}
+
+.lab {
+    background-color: rgb(142, 234, 142);
+}
+
+.counselling {
+    background-color: lightcyan;
+}
+
+.elective {
+    background-color: lightpink;
+}
+
+
+/* =================================
+   FOOTER
+   ================================= */
+
+.footer {
+    color: gray;
+    font-size: 14px;
+}

@@ -17,5 +17,6 @@ Student Hub Portal is a simple HTML project developed for Web Development Practi
 - Contact Us
 
 ## Technologies Used
-- HTML
-- Internal CSS
+- VS Code
+- Draw.io
+- Git & GitHub
