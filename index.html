@@ -1,81 +1,155 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Student Hub Portal</title>
-    <link href="style.css" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <center>
+    <!-- ================= HEADER ================= -->
 
-    <table width="80%">
-        <tr>
-            <td width="120">
-                <img src="Logo.jpg" alt="Student Hub Portal" width="100">
-            </td>
+    <header class="header">
 
-            <td align="center">
-                <h1>STUDENT HUB PORTAL</h1>
-            </td>
-        </tr>
-    </table>
+        <div class="header-logo">
+            <img src="Logo.jpg" alt="Student Hub Portal Logo">
+        </div>
 
-    <hr width="80%">
+        <div class="header-title">
+            <h1>STUDENT HUB PORTAL</h1>
+            <p>Your Gateway to Academic Information</p>
+        </div>
 
-</center>
+    </header>
 
-    <center>
-        <table border="1" cellpadding="10" cellspacing="0" width="50%">
-            <tr align="center">
-                <td><a href="index.html">Home</a></td>
-                <td><a href="about.html">About Us</a></td>
-                <td><a href="contact.html">Contact Us</a></td>
-            </tr>
-        </table>
-    </center>
+    <hr>
 
-    <br><br>
+    <!-- ================= NAVIGATION ================= -->
 
-    <center>
-        <h2>Welcome to Student Hub Portal</h2>
+    <nav class="navbar">
 
-        <p>
-            This portal allows students to register, login,
-            check attendance, fees details, timetable and results.
-        </p>
+        <a href="index.html" class="active">Home</a>
 
-        <br>
+        <a href="about.html">About Us</a>
 
-        <a href="register.html">
-            <button>Register Here</button>
-        </a>
+        <a href="contact.html">Contact Us</a>
 
-        &nbsp;&nbsp;&nbsp;
+    </nav>
 
-        <a href="login.html">
-            <button>Login Here</button>
-        </a>
+    <!-- ================= MAIN CONTENT ================= -->
 
-    </center>
+    <main>
 
-    <br><br>
+        <!-- Welcome Section -->
 
-    <hr width="80%">
+        <section class="welcome-section">
 
-    
-    <center>
-       <hr width="80%">
+            <h2>Welcome to Student Hub Portal</h2>
 
-<center>
-    <p>© 2026 Student Hub Portal</p>
+            <p>
+                This portal allows students to register, log in,
+                check attendance, view fee details, access timetables,
+                and check examination results.
+            </p>
 
-    <img src="Charusat.jpg" alt="Student Hub" width="500">
-</center>
-    </center>
+            <div class="button-container">
+
+                <a href="register.html" class="button">
+                    Register Here
+                </a>
+
+                <a href="login.html" class="button">
+                    Login Here
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Portal Features -->
+
+        <section class="features-section">
+
+            <h2>Explore Student Hub</h2>
+
+            <div class="features-grid">
+
+                <article class="feature-card">
+                    <h3>📚 Attendance</h3>
+                    <p>
+                        View your attendance records
+                        and monitor your academic progress.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>💳 Fee Details</h3>
+                    <p>
+                        Check your fee information
+                        and payment status.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>📅 Timetable</h3>
+                    <p>
+                        Access your class timetable
+                        and stay organized.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>📊 Results</h3>
+                    <p>
+                        View your examination results
+                        and academic performance.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- University Section -->
+
+        <section class="university-section">
+
+            <h2>Our University</h2>
+
+            <img
+                src="Charusat.jpg"
+                alt="CHARUSAT University"
+                class="university-image"
+            >
+
+            <p>
+                Student Hub Portal helps students access
+                important academic information in one place.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <p>© 2026 Student Hub Portal</p>
+
+        <p>Designed for Student Academic Support</p>
+
+    </footer>
 
 </body>
 

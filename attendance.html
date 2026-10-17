@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,116 +7,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Student Attendance - Student Hub Portal</title>
-<center>
-    <table width="80%">
-        <tr>
-            <td width="120" align="center">
-                <img src="Logo.jpg" alt="Student Hub Logo" width="90">
-            </td>
 
-            <td align="center">
-                <h1>STUDENT HUB PORTAL</h1>
-            </td>
-        </tr>
-    </table>
-
-    <hr width="80%">
-</center>
-<!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
-    <center>
-        <table class="nav" border="1" cellpadding="10" cellspacing="0" width="60%">
-            <tr align="center">
-                <td><a href="index.html">Home</a></td>
-                <td><a href="dashboard.html">Dashboard</a></td>
-                <td><a href="about.html">About Us</a></td>
-                <td><a href="contact.html">Contact Us</a></td>
-                <td><a href="login.html">Logout</a></td>
+    <!-- Header -->
+    <header class="header">
+        <table width="80%" align="center">
+            <tr>
+                <td width="120" align="center">
+                    <img src="Logo.jpg" alt="Student Hub Logo" width="90">
+                </td>
+
+                <td align="center">
+                    <h1>STUDENT HUB PORTAL</h1>
+                </td>
             </tr>
         </table>
-    </center>
+
+        <hr width="80%">
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <center>
+            <table class="nav" border="1" cellpadding="10"
+                   cellspacing="0" width="60%">
+                <tr align="center">
+                    <td><a href="index.html">Home</a></td>
+                    <td><a href="dashboard.html">Dashboard</a></td>
+                    <td><a href="about.html">About Us</a></td>
+                    <td><a href="contact.html">Contact Us</a></td>
+                    <td><a href="login.html">Logout</a></td>
+                </tr>
+            </table>
+        </center>
+    </nav>
 
     <br><br>
 
-    <center>
+    <!-- Main Content -->
+    <main>
+        <section class="attendance-section">
 
-        <h2>Student Attendance</h2>
+            <center>
+                <h2>Student Attendance</h2>
 
-        <table border="1" cellpadding="10" cellspacing="0" width="70%">
+                <table class="attendance-table"
+                       border="1"
+                       cellpadding="10"
+                       cellspacing="0"
+                       width="70%">
 
-            <tr bgcolor="lightgray">
-                <th>Subject</th>
-                <th>Total Lectures</th>
-                <th>Attended</th>
-                <th>Attendance (%)</th>
-            </tr>
+                    <thead>
+                        <tr bgcolor="lightgray">
+                            <th scope="col">Subject</th>
+                            <th scope="col">Total Lectures</th>
+                            <th scope="col">Attended</th>
+                            <th scope="col">Attendance (%)</th>
+                        </tr>
+                    </thead>
 
-            <tr>
-                <td>Web Development</td>
-                <td>40</td>
-                <td>38</td>
-                <td>95%</td>
-            </tr>
+                    <tbody>
+                        <tr>
+                            <td>Web Development</td>
+                            <td>40</td>
+                            <td>38</td>
+                            <td>95%</td>
+                        </tr>
 
-            <tr>
-                <td>Java Programming</td>
-                <td>42</td>
-                <td>39</td>
-                <td>93%</td>
-            </tr>
+                        <tr>
+                            <td>Java Programming</td>
+                            <td>42</td>
+                            <td>39</td>
+                            <td>93%</td>
+                        </tr>
 
-            <tr>
-                <td>Computer Networks</td>
-                <td>38</td>
-                <td>35</td>
-                <td>92%</td>
-            </tr>
+                        <tr>
+                            <td>Computer Networks</td>
+                            <td>38</td>
+                            <td>35</td>
+                            <td>92%</td>
+                        </tr>
 
-            <tr>
-                <td>Data Structures</td>
-                <td>40</td>
-                <td>37</td>
-                <td>93%</td>
-            </tr>
+                        <tr>
+                            <td>Data Structures</td>
+                            <td>40</td>
+                            <td>37</td>
+                            <td>93%</td>
+                        </tr>
 
-            <tr>
-                <td>Database Management</td>
-                <td>36</td>
-                <td>34</td>
-                <td>94%</td>
-            </tr>
+                        <tr>
+                            <td>Database Management</td>
+                            <td>36</td>
+                            <td>34</td>
+                            <td>94%</td>
+                        </tr>
+                    </tbody>
 
-            <tr>
-                <th colspan="3">Overall Attendance</th>
-                <th>93%</th>
-            </tr>
+                    <tfoot>
+                        <tr>
+                            <th colspan="3" scope="row">
+                                Overall Attendance
+                            </th>
+                            <th>93%</th>
+                        </tr>
+                    </tfoot>
 
-        </table>
+                </table>
 
-        <br><br>
+                <br><br>
 
-        <a href="dashboard.html">
-            <button>Back to Dashboard</button>
-        </a>
+                <a href="dashboard.html">
+                    <button type="button">Back to Dashboard</button>
+                </a>
 
-        &nbsp;&nbsp;
+                &nbsp;&nbsp;
 
-        <a href="index.html">
-            <button>Home</button>
-        </a>
+                <a href="index.html">
+                    <button type="button">Home</button>
+                </a>
 
-    </center>
+            </center>
+
+        </section>
+    </main>
 
     <br><br>
 
-    <hr width="80%">
-    
-    <center>
-        <p>© 2026 Student Hub Portal | All Rights Reserved</p>
-    </center>
+    <!-- Footer -->
+    <footer class="footer">
+        <hr width="80%">
+
+        <center>
+            <p>© 2026 Student Hub Portal | All Rights Reserved</p>
+        </center>
+    </footer>
 
 </body>
-
 </html>

@@ -1,95 +1,146 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Student Hub Portal</title>
-    <!-- <link rel="stylesheet" href="style.css">
-     -->
 
+    <title>About Us - Student Hub Portal</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <center>
+    <!-- ================= HEADER ================= -->
 
-    <table width="80%">
-        <tr>
-            <td width="120">
-                <img src="Logo.jpg" alt="STUDENT HUB PORTAL" width="100">
-            </td>
+    <header>
 
-            <td align="center">
-                <h1>STUDENT HUB PORTAL</h1>
-            </td>
-        </tr>
-    </table>
-
-    <hr width="80%">
-
-</center>
-
-  
-    <center>
-        <table class="nav" border="1" cellpadding="10" cellspacing="0" width="60%">
+        <table width="80%">
             <tr>
-                <td><a href="index.html">Home</a></td>
-                <td><a href="about.html">About Us</a></td>
-                <td><a href="contact.html">Contact Us</a></td>
-                <td><a href="login.html">Login</a></td>
-            </tr>
-        </table>
-    </center>
+                <td width="120">
+                    <img
+                        src="Logo.jpg"
+                        alt="Student Hub Portal Logo"
+                        width="100">
+                </td>
 
-    <br><br>
-
-    <center>
-
-        <h2>About Student Hub Portal</h2>
-
-        <table class="content" border="1" width="70%">
-            <tr>
-                <td>
-
-                    <p align="justify">
-                        📚 <b>Student Hub Portal</b> is an online platform designed to help
-                        students manage their academic information from one place. Students
-                        can register, log in, check attendance, view fee details, access
-                        the timetable, and view examination results.
-                    </p>
-
-                    <p align="justify">
-                        💻 This project is developed using HTML and CSS to demonstrate
-                        webpage design, navigation between multiple pages, and a simple
-                        student management system.
-                    </p>
-
-                    <p align="justify">
-                        🎯 The main objective of this portal is to provide students with
-                        a simple, user-friendly, and efficient platform for accessing
-                        important academic information anytime.
-                    </p>
-
+                <td align="center">
+                    <h1>STUDENT HUB PORTAL</h1>
                 </td>
             </tr>
         </table>
 
-        <br>
+        <hr width="80%">
 
-        <a href="index.html">
-            <button>🏠 Back to Home</button>
-        </a>
+    </header>
 
-    </center>
+    <!-- ================= NAVIGATION ================= -->
 
-    <br><br>
+    <nav>
 
-    <hr>
+        <center>
 
-    <center>
-        <p class="footer">© 2026 Student Hub Portal | All Rights Reserved</p>
-    </center>
+            <table class="nav"
+                   border="1"
+                   cellpadding="10"
+                   cellspacing="0"
+                   width="60%">
+
+                <tr>
+                    <td>
+                        <a href="index.html">Home</a>
+                    </td>
+
+                    <td>
+                        <a href="about.html">About Us</a>
+                    </td>
+
+                    <td>
+                        <a href="contact.html">Contact Us</a>
+                    </td>
+
+                    <td>
+                        <a href="login.html">Login</a>
+                    </td>
+                </tr>
+
+            </table>
+
+        </center>
+
+    </nav>
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+        <section class="about-section">
+
+            <h2>About Student Hub Portal</h2>
+
+            <table class="content"
+                   border="1"
+                   width="70%">
+
+                <tr>
+                    <td>
+
+                        <p align="justify">
+                            📚 <strong>Student Hub Portal</strong> is an
+                            online platform designed to help students
+                            manage their academic information from one
+                            place. Students can register, log in, check
+                            attendance, view fee details, access the
+                            timetable, and view examination results.
+                        </p>
+
+                        <p align="justify">
+                            💻 This project is developed using HTML,
+                            CSS, and JavaScript to demonstrate webpage
+                            design, navigation between multiple pages,
+                            form validation, and a simple student
+                            management system.
+                        </p>
+
+                        <p align="justify">
+                            🎯 The main objective of this portal is to
+                            provide students with a simple, user-friendly,
+                            and efficient platform for accessing important
+                            academic information.
+                        </p>
+
+                    </td>
+                </tr>
+
+            </table>
+
+            <br>
+
+            <a href="index.html">
+                <button type="button">
+                    🏠 Back to Home
+                </button>
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <hr>
+
+        <p>© 2026 Student Hub Portal | All Rights Reserved</p>
+
+    </footer>
 
 </body>
 

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,134 +6,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Profile - Student Hub Portal</title>
-    
-<center>
-    <table width="80%">
-        <tr>
-            <td width="120" align="center">
-                <img src="Logo.jpg" alt="Student Hub Logo" width="90">
-            </td>
-
-            <td align="center">
-                <h1>STUDENT HUB PORTAL</h1>
-            </td>
-        </tr>
-    </table>
-
-    <hr width="80%">
-</center>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
+    <style>
+        .profile-heading {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .profile-box {
+            padding: 30px;
+        }
+
+        .top-section {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 200px;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .student-info h3 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .student-info p {
+            font-size: 17px;
+            margin: 12px 0;
+        }
+
+        .photo-box {
+            width: 200px;
+            height: 230px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f2f5f9;
+            border: 1px solid #d6dee8;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 8px;
+        }
+
+        .profile-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .profile-table th,
+        .profile-table td {
+            padding: 12px 15px;
+            border: 1px solid #d7e0ea;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .profile-table th {
+            width: 40%;
+            background-color: #eaf2fb;
+        }
+
+        .profile-actions {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        @media (max-width: 600px) {
+            .profile-box {
+                padding: 15px;
+            }
+
+            .top-section {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .photo-box {
+                width: 170px;
+                height: 200px;
+                margin: 0 auto;
+            }
+
+            .student-info h3 {
+                font-size: 22px;
+            }
+
+            .profile-table th,
+            .profile-table td {
+                padding: 9px 7px;
+                font-size: 14px;
+                overflow-wrap: anywhere;
+            }
+
+            .profile-table th {
+                width: 42%;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <center>
-        <table border="1" cellpadding="10" cellspacing="0" width="60%">
-            <tr align="center">
-                <td><a href="index.html">Home</a></td>
-                <td><a href="dashboard.html">Dashboard</a></td>
-                <td><a href="about.html">About Us</a></td>
-                <td><a href="contact.html">Contact Us</a></td>
-                <td><a href="login.html">Logout</a></td>
-            </tr>
+    <header class="header">
+        <img src="Logo.jpg" alt="Student Hub Portal Logo">
+        <h1>STUDENT HUB PORTAL</h1>
+    </header>
+
+    <nav>
+        <table class="nav">
+            <tbody>
+                <tr>
+                    <td><a href="index.html">Home</a></td>
+                    <td><a href="dashboard.html">Dashboard</a></td>
+                    <td><a href="about.html">About Us</a></td>
+                    <td><a href="contact.html">Contact Us</a></td>
+                    <td><a href="login.html">Logout</a></td>
+                </tr>
+            </tbody>
         </table>
-    </center>
+    </nav>
 
-    <br><br>
+    <main>
+        <section class="profile-section">
 
-    <h2 align="center">Student Profile</h2>
+            <h2 class="profile-heading">Student Profile</h2>
 
-    <div class="profile-box">
+            <div class="profile-box">
 
-        <div class="top-section">
+                <div class="top-section">
 
-            <div>
-                <h3>Purv Vipulkumar Patel</h3>
-                <p><b>Student ID :</b> 25CE089</p>
-                <p><b>Department :</b> Computer Engineering</p>
-                <p><b>Semester :</b> 3</p>
+                    <div class="student-info">
+                        <h3>Purv Vipulkumar Patel</h3>
+
+                        <p><strong>Student ID:</strong> 25CE089</p>
+                        <p><strong>Department:</strong> Computer Engineering</p>
+                        <p><strong>Semester:</strong> 3</p>
+                    </div>
+
+                    <div class="photo-box">
+                        <img src="Purv.png" alt="Purv Patel - Student Profile Photo">
+                    </div>
+
+                </div>
+
+                <div class="table-container">
+                    <table class="profile-table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Student Name</th>
+                                <td>Purv Vipulkumar Patel</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Student ID</th>
+                                <td>25CE089</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Department</th>
+                                <td>Computer Engineering</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Semester</th>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Date of Birth</th>
+                                <td>08-07-2008</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Gender</th>
+                                <td>Male</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Email ID</th>
+                                <td>25CE089@charusat.edu.in</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mobile Number</th>
+                                <td>8140184601</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Blood Group</th>
+                                <td>B+</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Address</th>
+                                <td>Gujarat, India</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="profile-actions">
+                    <a href="dashboard.html" class="button">Back to Dashboard</a>
+                </div>
+
             </div>
 
-            <div class="photo-box">
-                <img src="wallpaper.png" alt="Profile Photo">
-                <br><br>
-                Student Photo
-            </div>
+        </section>
+    </main>
 
-        </div>
-
-        <table border="1" width="100%">
-
-            <tr>
-                <td><b>Student Name</b></td>
-                <td>Purv Vipulkumar Patel</td>
-            </tr>
-
-            <tr>
-                <td><b>Student ID</b></td>
-                <td>25CE089</td>
-            </tr>
-
-            <tr>
-                <td><b>Department</b></td>
-                <td>Computer Engineering</td>
-            </tr>
-
-            <tr>
-                <td><b>Semester</b></td>
-                <td>3</td>
-            </tr>
-
-            <tr>
-                <td><b>Date of Birth</b></td>
-                <td>08-07-2008</td>
-            </tr>
-
-            <tr>
-                <td><b>Gender</b></td>
-                <td>Male</td>
-            </tr>
-
-            <tr>
-                <td><b>Email ID</b></td>
-                <td>25CE089@charusat.edu.in</td>
-            </tr>
-
-            <tr>
-                <td><b>Mobile Number</b></td>
-                <td>8140184601</td>
-            </tr>
-
-            <tr>
-                <td><b>Blood Group</b></td>
-                <td>B+</td>
-            </tr>
-
-            <tr>
-                <td><b>Address</b></td>
-                <td>Gujarat, India</td>
-            </tr>
-
-        </table>
-
-        <br>
-
-        <center>
-            <a href="dashboard.html">
-                <button>Back to Dashboard</button>
-            </a>
-        </center>
-
-    </div>
-
-    <br><br>
-
-    <hr width="80%">
-
-    <center>
+    <footer class="footer">
         <p>© 2026 Student Hub Portal | All Rights Reserved</p>
-    </center>
+    </footer>
 
 </body>
 

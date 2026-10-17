@@ -1,105 +1,143 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Fees Details - Student Hub Portal</title>
-<center>
-    <table width="80%">
-        <tr>
-            <td width="120" align="center">
-                <img src="Logo.jpg" alt="Student Hub Logo" width="90">
-            </td>
 
-            <td align="center">
-                <h1>STUDENT HUB PORTAL</h1>
-            </td>
-        </tr>
-    </table>
-
-    <hr width="80%">
-</center>
-    <link rel="stylesheet" href="'style.css">
-
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <center>
-        <table border="1" cellpadding="10" cellspacing="0" width="60%">
-            <tr align="center">
-                <td><a href="index.html">Home</a></td>
-                <td><a href="dashboard.html">Dashboard</a></td>
-                <td><a href="about.html">About Us</a></td>
-                <td><a href="contact.html">Contact Us</a></td>
-                <td><a href="login.html">Logout</a></td>
+
+    <!-- Header -->
+    <header class="header">
+
+        <table width="80%" align="center">
+            <tr>
+                <td width="120" align="center">
+                    <img src="Logo.jpg"
+                         alt="Student Hub Portal Logo"
+                         width="90">
+                </td>
+
+                <td align="center">
+                    <h1>STUDENT HUB PORTAL</h1>
+                </td>
             </tr>
         </table>
-    </center>
+
+        <hr width="80%">
+
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <center>
+            <table class="nav"
+                   border="1"
+                   cellpadding="10"
+                   cellspacing="0"
+                   width="70%">
+
+                <tr align="center">
+                    <td><a href="index.html">Home</a></td>
+                    <td><a href="dashboard.html">Dashboard</a></td>
+                    <td><a href="about.html">About Us</a></td>
+                    <td><a href="contact.html">Contact Us</a></td>
+                    <td><a href="login.html">Logout</a></td>
+                </tr>
+
+            </table>
+        </center>
+    </nav>
 
     <br><br>
 
-    <center>
+    <!-- Main Content -->
+    <main>
+        <section class="fees-section">
 
-        <h2>Student Fees Details</h2>
+            <center>
+                <h2>Student Fees Details</h2>
 
-        <table border="1" cellpadding="10" cellspacing="0" width="80%">
+                <table class="fees-table"
+                       border="1"
+                       cellpadding="10"
+                       cellspacing="0"
+                       width="80%">
 
-            <tr>
-                <th>Semester</th>
-                <th>Total Fees</th>
-                <th>Paid Fees</th>
-                <th>Pending Fees</th>
-                <th>Status</th>
-            </tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Semester</th>
+                            <th scope="col">Total Fees</th>
+                            <th scope="col">Paid Fees</th>
+                            <th scope="col">Pending Fees</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
 
-            <tr>
-                <td>Semester 1</td>
-                <td>₹45,000</td>
-                <td>₹45,000</td>
-                <td>₹0</td>
-                <td class="paid">Paid</td>
-            </tr>
+                    <tbody>
+                        <tr>
+                            <td>Semester 1</td>
+                            <td>₹45,000</td>
+                            <td>₹45,000</td>
+                            <td>₹0</td>
+                            <td class="paid">Paid</td>
+                        </tr>
 
-            <tr>
-                <td>Semester 2</td>
-                <td>₹45,000</td>
-                <td>₹45,000</td>
-                <td>₹0</td>
-                <td class="paid">Paid</td>
-            </tr>
+                        <tr>
+                            <td>Semester 2</td>
+                            <td>₹45,000</td>
+                            <td>₹45,000</td>
+                            <td>₹0</td>
+                            <td class="paid">Paid</td>
+                        </tr>
 
-            <tr>
-                <td>Semester 3</td>
-                <td>₹50,000</td>
-                <td>₹25,000</td>
-                <td>₹25,000</td>
-                <td class="pending">Pending</td>
-            </tr>
+                        <tr>
+                            <td>Semester 3</td>
+                            <td>₹50,000</td>
+                            <td>₹25,000</td>
+                            <td>₹25,000</td>
+                            <td class="pending">Pending</td>
+                        </tr>
+                    </tbody>
 
-        </table>
+                </table>
 
-        <br><br>
+                <br><br>
 
-        <a href="dashboard.html">
-            <button>Back to Dashboard</button>
-        </a>
+                <a href="dashboard.html">
+                    <button type="button">Back to Dashboard</button>
+                </a>
 
-        &nbsp;&nbsp;
+                &nbsp;&nbsp;
 
-        <a href="index.html">
-            <button>Home</button>
-        </a>
+                <a href="index.html">
+                    <button type="button">Home</button>
+                </a>
 
-    </center>
+            </center>
+
+        </section>
+    </main>
 
     <br><br>
 
-    <hr width="80%">
+    <!-- Footer -->
+    <footer class="footer">
 
-    <center>
-        <p>© 2026 Student Hub Portal | All Rights Reserved</p>
-    </center>
+        <hr width="80%">
+
+        <center>
+            <p>© 2026 Student Hub Portal | All Rights Reserved</p>
+        </center>
+
+    </footer>
 
 </body>
 

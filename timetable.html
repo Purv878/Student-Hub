@@ -1,186 +1,233 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Table - Student Hub Portal</title>
-    <!-- Header -->
-<center>
-    <table width="80%">
-        <tr>
-            <td width="120" align="center">
-                <img src="Logo.jpg" alt="Student Hub Logo" width="90">
-            </td>
 
-            <td align="center">
-                <h1>STUDENT HUB PORTAL</h1>
-            </td>
-        </tr>
-    </table>
+    <title>Student Time Table - Student Hub Portal</title>
 
-    <hr width="80%">
-</center>
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <center>
-        <table border="1" cellpadding="10" cellspacing="0" width="60%">
-            <tr align="center">
-                <td><a href="index.html">Home</a></td>
-                <td><a href="dashboard.html">Dashboard</a></td>
-                <td><a href="about.html">About Us</a></td>
-                <td><a href="contact.html">Contact Us</a></td>
-                <td><a href="login.html">Logout</a></td>
+
+    <!-- Header -->
+    <header class="header">
+
+        <table class="header-table" width="80%" align="center">
+            <tr>
+                <td width="120" align="center">
+                    <img src="Logo.jpg"
+                         alt="Student Hub Portal Logo"
+                         width="90">
+                </td>
+
+                <td align="center">
+                    <h1>STUDENT HUB PORTAL</h1>
+                </td>
             </tr>
         </table>
-    </center>
+
+        <hr width="80%">
+
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <center>
+            <table class="nav"
+                   border="1"
+                   cellpadding="10"
+                   cellspacing="0"
+                   width="70%">
+
+                <tr align="center">
+                    <td><a href="index.html">Home</a></td>
+                    <td><a href="dashboard.html">Dashboard</a></td>
+                    <td><a href="about.html">About Us</a></td>
+                    <td><a href="contact.html">Contact Us</a></td>
+                    <td><a href="login.html">Logout</a></td>
+                </tr>
+
+            </table>
+        </center>
+    </nav>
 
     <br>
 
-    <center>
-        <h2>Student Time Table</h2>
-    </center>
+    <!-- Main Content -->
+    <main>
+        <section class="timetable-section">
 
+            <h2 align="center">Student Time Table</h2>
 
-    <table border="1" align="center" cellpadding="8" cellspacing="0">
+            <div class="timetable-container">
 
-        <tr>
-            <th>Day/Time</th>
-            <th>9:10-10:10</th>
-            <th>10:10-11:10</th>
-            <th>11:10-12:10</th>
-            <th>12:10-1:10</th>
-            <th>1:10-2:10</th>
-            <th>2:10-2:20</th>
-            <th>2:20-3:20</th>
-            <th>3:20-4:20</th>
-        </tr>
+                <table class="timetable-table"
+                       border="1"
+                       cellpadding="8"
+                       cellspacing="0"
+                       align="center">
 
-        <tr>
-            <th rowspan="2">Monday</th>
-            <td>ITUE203</td>
-            <td>ITUE203</td>
-            <td rowspan="12" class="break">Lunch Break</td>
-            <td>ITUC201</td>
-            <td>CSUC201</td>
-            <td rowspan="12" class="break">Short Break</td>
-            <td colspan="2" class="lab">Laboratory Session</td>
-        </tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Day / Time</th>
+                            <th scope="col">9:10–10:10</th>
+                            <th scope="col">10:10–11:10</th>
+                            <th scope="col">11:10–12:10</th>
+                            <th scope="col">12:10–1:10</th>
+                            <th scope="col">1:10–2:10</th>
+                            <th scope="col">2:10–2:20</th>
+                            <th scope="col">2:20–3:20</th>
+                            <th scope="col">3:20–4:20</th>
+                        </tr>
+                    </thead>
 
-        <tr>
-            <td>WDF(T)</td>
-            <td>WDF(T)</td>
-            <td>FCN(T)</td>
-            <td>FDSA(T)</td>
-            <td colspan="2" class="lab">D1-Batch-CEUE203-OOP(P)</td>
-        </tr>
+                    <tbody>
 
-        <tr>
-            <th rowspan="2">Tuesday</th>
-            <td colspan="2" class="lab">Laboratory Session</td>
-            <td>ITUE203</td>
-            <td>CEUE203</td>
-            <td>HSUV201</td>
-            <td>HSUV201</td>
-        </tr>
+                        <!-- Monday -->
+                        <tr>
+                            <th scope="rowgroup" rowspan="2">Monday</th>
+                            <td>ITUE203</td>
+                            <td>ITUE203</td>
+                            <td rowspan="12" class="break">Lunch Break</td>
+                            <td>ITUC201</td>
+                            <td>CSUC201</td>
+                            <td rowspan="12" class="break">Short Break</td>
+                            <td colspan="2" class="lab">Laboratory Session</td>
+                        </tr>
 
-        <tr>
-            <td colspan="2" class="lab">D1-Batch-ITUC203-WDF(P)</td>
-            <td>WDF(T)</td>
-            <td>OOP(T)</td>
-            <td>HS</td>
-            <td>HS</td>
-        </tr>
+                        <tr>
+                            <td>WDF (T)</td>
+                            <td>WDF (T)</td>
+                            <td>FCN (T)</td>
+                            <td>FDSA (T)</td>
+                            <td colspan="2" class="lab">D1-Batch-CEUE203-OOP (P)</td>
+                        </tr>
 
-        <tr>
-            <th rowspan="2">Wednesday</th>
-            <td colspan="2" class="lab">Laboratory Session</td>
-            <td colspan="2">SC</td>
-            <td>MSUD203</td>
-            <td>ITUC201</td>
-        </tr>
+                        <!-- Tuesday -->
+                        <tr>
+                            <th scope="rowgroup" rowspan="2">Tuesday</th>
+                            <td colspan="2" class="lab">Laboratory Session</td>
+                            <td>ITUE203</td>
+                            <td>CEUE203</td>
+                            <td>HSUV201</td>
+                            <td>HSUV201</td>
+                        </tr>
 
-        <tr>
-            <td colspan="2" class="lab">D1-Batch-ITUC201-FCN(P)</td>
-            <td colspan="2" class="counselling">Student Counselling</td>
-            <td>Maths(T)</td>
-            <td>FCN(T)</td>
-        </tr>
+                        <tr>
+                            <td colspan="2" class="lab">D1-Batch-ITUC203-WDF (P)</td>
+                            <td>WDF (T)</td>
+                            <td>OOP (T)</td>
+                            <td>HS</td>
+                            <td>HS</td>
+                        </tr>
 
-        <tr>
-            <th rowspan="2">Thursday</th>
-            <td>ITUC201</td>
-            <td>CSUC201</td>
-            <td>ITUE203</td>
-            <td>MSUD203</td>
-            <td colspan="2" class="lab">Laboratory Session</td>
-        </tr>
+                        <!-- Wednesday -->
+                        <tr>
+                            <th scope="rowgroup" rowspan="2">Wednesday</th>
+                            <td colspan="2" class="lab">Laboratory Session</td>
+                            <td colspan="2">SC</td>
+                            <td>MSUD203</td>
+                            <td>ITUC201</td>
+                        </tr>
 
-        <tr>
-            <td>FCN(T)</td>
-            <td>FDSA(T)</td>
-            <td>WDF(T)</td>
-            <td>Maths(T)</td>
-            <td colspan="2" class="lab">D1-Batch-ITUE203-WDF(P)</td>
-        </tr>
+                        <tr>
+                            <td colspan="2" class="lab">D1-Batch-ITUC201-FCN (P)</td>
+                            <td colspan="2" class="counselling">Student Counselling</td>
+                            <td>Maths (T)</td>
+                            <td>FCN (T)</td>
+                        </tr>
 
-        <tr>
-            <th rowspan="2">Friday</th>
-            <td>CSUC201</td>
-            <td>MSUD203</td>
-            <td>CEUE203</td>
-            <td>ITUC201</td>
-            <td colspan="2" class="lab">Laboratory Session</td>
-        </tr>
+                        <!-- Thursday -->
+                        <tr>
+                            <th scope="rowgroup" rowspan="2">Thursday</th>
+                            <td>ITUC201</td>
+                            <td>CSUC201</td>
+                            <td>ITUE203</td>
+                            <td>MSUD203</td>
+                            <td colspan="2" class="lab">Laboratory Session</td>
+                        </tr>
 
-        <tr>
-            <td>FDSA(T)</td>
-            <td>Maths(T)</td>
-            <td>OOP(T)</td>
-            <td>FCN(T)</td>
-            <td colspan="2" class="lab">D1-Batch-CSUC201-FDSA(P)</td>
-        </tr>
+                        <tr>
+                            <td>FCN (T)</td>
+                            <td>FDSA (T)</td>
+                            <td>WDF (T)</td>
+                            <td>Maths (T)</td>
+                            <td colspan="2" class="lab">D1-Batch-ITUE203-WDF (P)</td>
+                        </tr>
 
-        <tr>
-            <th rowspan="2">Saturday</th>
-            <td rowspan="2" class="elective">University Elective -1</td>
-            <td rowspan="2" class="elective">University Elective -1</td>
-            <td rowspan="2" class="elective">University Elective -1</td>
-            <td rowspan="2" class="elective">University Elective -1</td>
-            <td rowspan="2" class="elective">Skill Enhancement Session</td>
-            <td rowspan="2" class="elective">Skill Enhancement Session</td>
-        </tr>
+                        <!-- Friday -->
+                        <tr>
+                            <th scope="rowgroup" rowspan="2">Friday</th>
+                            <td>CSUC201</td>
+                            <td>MSUD203</td>
+                            <td>CEUE203</td>
+                            <td>ITUC201</td>
+                            <td colspan="2" class="lab">Laboratory Session</td>
+                        </tr>
 
-        <tr></tr>
+                        <tr>
+                            <td>FDSA (T)</td>
+                            <td>Maths (T)</td>
+                            <td>OOP (T)</td>
+                            <td>FCN (T)</td>
+                            <td colspan="2" class="lab">D1-Batch-CSUC201-FDSA (P)</td>
+                        </tr>
 
-    </table>
+                        <!-- Saturday -->
+                        <tr>
+                            <th scope="rowgroup" rowspan="2">Saturday</th>
+                            <td rowspan="2" class="elective">University Elective - 1</td>
+                            <td rowspan="2" class="elective">University Elective - 1</td>
+                            <td rowspan="2" class="elective">University Elective - 1</td>
+                            <td rowspan="2" class="elective">University Elective - 1</td>
+                            <td rowspan="2" class="elective">Skill Enhancement Session</td>
+                            <td rowspan="2" class="elective">Skill Enhancement Session</td>
+                        </tr>
+
+                        <tr></tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="timetable-actions">
+                <center>
+                    <br><br>
+
+                    <a href="dashboard.html">
+                        <button type="button">Back to Dashboard</button>
+                    </a>
+
+                    &nbsp;&nbsp;
+
+                    <a href="index.html">
+                        <button type="button">Home</button>
+                    </a>
+                </center>
+            </div>
+
+        </section>
+    </main>
 
     <br><br>
-
-    <center>
-
-        <a href="dashboard.html">
-            <button>Back to Dashboard</button>
-        </a>
-
-        &nbsp;&nbsp;
-
-        <a href="index.html">
-            <button>Home</button>
-        </a>
-
-    </center>
-
-    <br><br>
-
-    <hr width="80%">
 
     <!-- Footer -->
-    <center>
-        <p>© 2026 Student Hub Portal | All Rights Reserved</p>
-    </center>
+    <footer class="footer">
+        <hr width="80%">
+
+        <center>
+            <p>© 2026 Student Hub Portal | All Rights Reserved</p>
+        </center>
+    </footer>
 
 </body>
 

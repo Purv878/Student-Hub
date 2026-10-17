@@ -1,95 +1,148 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Login - Student Hub Portal</title>
-     <center>
 
-    <table width="80%">
-        <tr>
-            <td width="120">
-                <img src="Logo.jpg" alt="STUDENT HUB PORTAL" width="100">
-            </td>
-
-            <td align="center">
-                <h1>STUDENT HUB PORTAL</h1>
-            </td>
-        </tr>
-    </table>
-
-    <hr width="80%">
-
-</center>
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
-    
+
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-   
-    <center>
-        <table border="1" cellpadding="10" cellspacing="0" width="50%">
-            <tr align="center">
-                <td><a href="index.html">Home</a></td>
-                <td><a href="about.html">About Us</a></td>
-                <td><a href="contact.html">Contact Us</a></td>
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <table width="80%">
+            <tr>
+                <td width="120">
+                    <img src="Logo.jpg"
+                         alt="Student Hub Portal Logo"
+                         width="100">
+                </td>
+
+                <td align="center">
+                    <h1>STUDENT HUB PORTAL</h1>
+                </td>
             </tr>
         </table>
-    </center>
 
-    <br><br>
+        <hr width="80%">
 
-    <center>
+    </header>
 
-        <h2>Student Login</h2>
+    <!-- ================= NAVIGATION ================= -->
 
-        <form action="dashboard.html">
+    <nav>
+        <center>
+            <table border="1" cellpadding="10"
+                   cellspacing="0" width="50%">
 
-            <table cellpadding="10">
+                <tr align="center">
 
-                <tr>
-                    <td>User ID :</td>
                     <td>
-                        <input type="text" name="userid" required>
+                        <a href="index.html">Home</a>
                     </td>
-                </tr>
 
-                <tr>
-                    <td>Password :</td>
                     <td>
-                        <input type="password" name="password" required>
+                        <a href="about.html">About Us</a>
                     </td>
-                </tr>
 
-                <tr>
-                    <td colspan="2" align="center">
-                        <input type="submit" value="Login">
+                    <td>
+                        <a href="contact.html">Contact Us</a>
                     </td>
+
                 </tr>
 
             </table>
-
-        </form>
-
-        <br>
-
-        <p>Don't have an account?</p>
-
-        <a href="register.html">
-            <button>Register Here</button>
-        </a>
-
-    </center>
+        </center>
+    </nav>
 
     <br><br>
 
-    <hr width="80%">
+    <!-- ================= LOGIN FORM ================= -->
 
-    <center>
+    <main>
+
+        <center>
+
+            <h2>Student Login</h2>
+
+            <form action="dashboard.html">
+
+                <table cellpadding="10">
+
+                    <tr>
+                        <td>
+                            <label for="userid">User ID:</label>
+                        </td>
+
+                        <td>
+                            <input
+                                type="text"
+                                id="userid"
+                                name="userid"
+                                required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="password">Password:</label>
+                        </td>
+
+                        <td>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input
+                                type="submit"
+                                value="Login">
+                        </td>
+                    </tr>
+
+                </table>
+
+            </form>
+
+            <br>
+
+            <p>Don't have an account?</p>
+
+            <a href="register.html">
+                <button type="button">Register Here</button>
+            </a>
+
+        </center>
+
+    </main>
+
+    <br><br>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <hr width="80%">
+
         <p>© 2026 Student Hub Portal</p>
-    </center>
+
+    </footer>
 
 </body>
 
