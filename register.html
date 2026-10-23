@@ -1,155 +1,144 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Register - Student Hub Portal</title>
-
-    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- External JavaScript -->
     <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
-
-        <table width="80%">
-            <tr>
-                <td width="120">
-                    <img src="Logo.jpg"
-                         alt="Student Hub Portal Logo"
-                         width="100">
-                </td>
-
-                <td align="center">
-                    <h1>STUDENT HUB PORTAL</h1>
-                </td>
-            </tr>
-        </table>
-
-        <hr width="80%">
-
+    <header class="header">
+        <div class="header-logo">
+            <img src="Logo.jpg" alt="Student Hub Portal Logo" width="100">
+        </div>
+        <div class="header-title">
+            <h1>STUDENT HUB PORTAL</h1>
+            <p>Your Gateway to Academic Information</p>
+        </div>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-        <center>
-            <table border="1" cellpadding="10"
-                   cellspacing="0" width="50%">
-                <tr align="center">
-                    <td>
-                        <a href="index.html">Home</a>
-                    </td>
-
-                    <td>
-                        <a href="about.html">About Us</a>
-                    </td>
-
-                    <td>
-                        <a href="contact.html">Contact Us</a>
-                    </td>
-                </tr>
-            </table>
-        </center>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
     </nav>
 
-    <br><br>
+    <main class="registration-container">
 
-    <!-- Registration Form -->
-    <main>
+        <h2>Student Registration</h2>
 
-        <center>
+        <form id="registrationForm" action="login.html" method="get">
 
-            <h2>Student Registration</h2>
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" autocomplete="name" required>
+                <small id="fullnameError" class="error-message"></small>
+            </div>
 
-            <form action="login.html">
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+                <small id="emailError" class="error-message"></small>
+            </div>
 
-                <table cellpadding="10">
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" inputmode="numeric"
+                       autocomplete="tel" pattern="[6-9][0-9]{9}"
+                       title="Enter a valid 10-digit Indian mobile number" required>
+                <small id="mobileError" class="error-message"></small>
+            </div>
 
-                    <tr>
-                        <td>
-                            <label for="userid">User ID:</label>
-                        </td>
+            <div class="form-group">
+                <label for="userid">User ID:</label>
+                <input type="text" id="userid" name="userid" autocomplete="username" required>
+                <small id="useridError" class="error-message"></small>
+            </div>
 
-                        <td>
-                            <input
-                                type="text"
-                                id="userid"
-                                name="userid"
-                                required>
-                        </td>
-                    </tr>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"
+                       autocomplete="new-password" minlength="8" required>
+                <small id="passwordStrength" aria-live="polite"></small>
+                <small id="passwordError" class="error-message"></small>
+            </div>
 
-                    <tr>
-                        <td>
-                            <label for="password">Password:</label>
-                        </td>
+            <div class="form-group">
+                <label for="confirmpassword">Confirm Password:</label>
+                <input type="password" id="confirmpassword" name="confirmpassword"
+                       autocomplete="new-password" required>
+                <small id="confirmPasswordError" class="error-message"></small>
+            </div>
 
-                        <td>
-                            <input
-                                type="password"
-                                id="password"
-                                name="password"
-                                required>
-                        </td>
-                    </tr>
+            <div class="form-group">
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">Select Course</option>
+                    <option value="Computer Engineering">Computer Engineering</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                </select>
+                <small id="courseError" class="error-message"></small>
+            </div>
 
-                    <tr>
-                        <td>
-                            <label for="confirmpassword">
-                                Confirm Password:
-                            </label>
-                        </td>
+            <div class="form-group">
+                <label for="year">Academic Year:</label>
+                <select id="year" name="year" required>
+                    <option value="">Select Year</option>
+                    <option value="First Year">First Year</option>
+                    <option value="Second Year">Second Year</option>
+                    <option value="Third Year">Third Year</option>
+                    <option value="Fourth Year">Fourth Year</option>
+                </select>
+                <small id="yearError" class="error-message"></small>
+            </div>
 
-                        <td>
-                            <input
-                                type="password"
-                                id="confirmpassword"
-                                name="confirmpassword"
-                                required>
-                        </td>
-                    </tr>
+            <fieldset class="form-group">
+                <legend>Gender:</legend>
 
-                    <tr>
-                        <td colspan="2" align="center">
-                            <input
-                                type="submit"
-                                value="Register">
-                        </td>
-                    </tr>
+                <label>
+                    <input type="radio" name="gender" value="Male" required>
+                    Male
+                </label>
 
-                </table>
+                <label>
+                    <input type="radio" name="gender" value="Female">
+                    Female
+                </label>
 
-            </form>
+                <label>
+                    <input type="radio" name="gender" value="Other">
+                    Other
+                </label>
 
-            <br>
+                <small id="genderError" class="error-message"></small>
+            </fieldset>
 
-            <p>Already Registered?</p>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I accept the Terms and Conditions.
+                </label>
+                <small id="termsError" class="error-message"></small>
+            </div>
 
-            <a href="login.html">
-                <button type="button">Login Here</button>
-            </a>
+            <button type="submit" class="button">Register</button>
 
-        </center>
+        </form>
+
+        <p>Already Registered? <a href="login.html">Login Here</a></p>
 
     </main>
 
-    <br><br>
-
-    <!-- Footer -->
     <footer class="footer">
-
-        <hr width="80%">
-
         <p>© 2026 Student Hub Portal</p>
-
+        <p>Designed for Student Academic Support</p>
     </footer>
 
 </body>

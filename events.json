@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development Workshop",
+    "date": "2026-11-25",
+    "time": "10:00 AM",
+    "location": "CSPIT Computer Lab",
+    "category": "Workshop",
+    "description": "Learn the fundamentals of HTML, CSS, and JavaScript through hands-on practice."
+  },
+  {
+    "id": 2,
+    "title": "Coding Competition 2026",
+    "date": "2026-11-28",
+    "time": "09:30 AM",
+    "location": "CHARUSAT Auditorium",
+    "category": "Competition",
+    "description": "Show your programming skills by solving challenging coding problems."
+  },
+  {
+    "id": 3,
+    "title": "AI and Machine Learning Seminar",
+    "date": "2026-12-02",
+    "time": "11:00 AM",
+    "location": "Seminar Hall 1",
+    "category": "Seminar",
+    "description": "Explore artificial intelligence, machine learning, and their real-world applications."
+  },
+  {
+    "id": 4,
+    "title": "UI/UX Design Workshop",
+    "date": "2026-12-05",
+    "time": "10:30 AM",
+    "location": "Design Studio",
+    "category": "Workshop",
+    "description": "Discover user research, wireframing, prototyping, and interface design."
+  },
+  {
+    "id": 5,
+    "title": "Annual Sports Meet",
+    "date": "2026-12-08",
+    "time": "08:00 AM",
+    "location": "University Sports Ground",
+    "category": "Sports",
+    "description": "Participate in exciting individual and team sports competitions."
+  },
+  {
+    "id": 6,
+    "title": "Cyber Security Awareness",
+    "date": "2026-12-12",
+    "time": "02:00 PM",
+    "location": "CSPIT Seminar Hall",
+    "category": "Seminar",
+    "description": "Understand cyber threats, online privacy, and essential security practices."
+  },
+  {
+    "id": 7,
+    "title": "Project Exhibition 2026",
+    "date": "2026-12-15",
+    "time": "10:00 AM",
+    "location": "Central Exhibition Hall",
+    "category": "Exhibition",
+    "description": "Present innovative student projects and explore creative technical solutions."
+  },
+  {
+    "id": 8,
+    "title": "Photography Competition",
+    "date": "2026-12-18",
+    "time": "09:00 AM",
+    "location": "University Campus",
+    "category": "Competition",
+    "description": "Capture creative campus moments and showcase your photography skills."
+  },
+  {
+    "id": 9,
+    "title": "Entrepreneurship Talk",
+    "date": "2026-12-21",
+    "time": "11:30 AM",
+    "location": "CHARUSAT Auditorium",
+    "category": "Seminar",
+    "description": "Learn about startups, business ideas, and building successful ventures."
+  },
+  {
+    "id": 10,
+    "title": "Open Source Contribution Workshop",
+    "date": "2026-12-24",
+    "time": "10:00 AM",
+    "location": "Computer Lab 2",
+    "category": "Workshop",
+    "description": "Learn Git, GitHub, and the basics of contributing to open-source projects."
+  },
+  {
+    "id": 11,
+    "title": "Cultural Fest 2027",
+    "date": "2027-01-05",
+    "time": "04:00 PM",
+    "location": "University Main Ground",
+    "category": "Cultural",
+    "description": "Enjoy music, dance, performances, and student cultural activities."
+  },
+  {
+    "id": 12,
+    "title": "Hackathon Challenge",
+    "date": "2027-01-10",
+    "time": "09:00 AM",
+    "location": "Innovation Centre",
+    "category": "Competition",
+    "description": "Collaborate with a team to build creative technology solutions."
+  },
+  {
+    "id": 13,
+    "title": "Cloud Computing Seminar",
+    "date": "2027-01-15",
+    "time": "11:00 AM",
+    "location": "Seminar Hall 2",
+    "category": "Seminar",
+    "description": "Explore cloud platforms, deployment, scalability, and modern cloud services."
+  },
+  {
+    "id": 14,
+    "title": "Resume Building Workshop",
+    "date": "2027-01-20",
+    "time": "02:30 PM",
+    "location": "Placement Cell",
+    "category": "Workshop",
+    "description": "Improve your resume, LinkedIn profile, and interview preparation skills."
+  },
+  {
+    "id": 15,
+    "title": "Tech Fest 2027",
+    "date": "2027-01-25",
+    "time": "09:00 AM",
+    "location": "CHARUSAT Campus",
+    "category": "Cultural",
+    "description": "Celebrate technology with technical events, games, exhibitions, and student activities."
+  }
+]

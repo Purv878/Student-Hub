@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "question": "How do I register on the portal?",
+        "answer": "Open the Register page, complete all required fields, and submit the form."
+    },
+    {
+        "id": 2,
+        "question": "How do I log in?",
+        "answer": "Enter your registered User ID and password on the Login page."
+    },
+    {
+        "id": 3,
+        "question": "How can I check attendance?",
+        "answer": "Log in and open the Attendance section."
+    },
+    {
+        "id": 4,
+        "question": "Where can I view examination results?",
+        "answer": "Open the Results section from your student dashboard."
+    },
+    {
+        "id": 5,
+        "question": "Where can I find my timetable?",
+        "answer": "Visit the Timetable section to view your class schedule."
+    },
+    {
+        "id": 6,
+        "question": "How can I check fee details?",
+        "answer": "Open the Fee Details section from your dashboard."
+    },
+    {
+        "id": 7,
+        "question": "What is the Student Hub Portal?",
+        "answer": "It is a student portal that groups useful academic information in one place."
+    },
+    {
+        "id": 8,
+        "question": "Can I search campus events?",
+        "answer": "Yes, use the event search box to search by event title or location."
+    },
+    {
+        "id": 9,
+        "question": "Can I filter events by category?",
+        "answer": "Yes, select a category from the event category dropdown."
+    },
+    {
+        "id": 10,
+        "question": "How do I change the event order?",
+        "answer": "Choose a sorting option from the Sort Events dropdown."
+    },
+    {
+        "id": 11,
+        "question": "What is pagination?",
+        "answer": "Pagination divides records into smaller pages for easier browsing."
+    },
+    {
+        "id": 12,
+        "question": "Why is data not loading?",
+        "answer": "Make sure JSON files are in the project folder and open the site with Live Server."
+    },
+    {
+        "id": 13,
+        "question": "Can I view student records?",
+        "answer": "The sample Student Directory displays example records loaded from students.json."
+    },
+    {
+        "id": 14,
+        "question": "Does the portal support dark mode?",
+        "answer": "Yes, use the Dark Mode button in the header."
+    },
+    {
+        "id": 15,
+        "question": "How do I contact support?",
+        "answer": "Open the Contact Us page for the available contact information."
+    }
+]

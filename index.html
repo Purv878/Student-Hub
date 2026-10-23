@@ -1,156 +1,149 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Student Hub Portal</title>
-
-    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- External JavaScript -->
     <script src="script.js" defer></script>
 </head>
-
 <body>
-
-    <!-- ================= HEADER ================= -->
-
     <header class="header">
-
-        <div class="header-logo">
-            <img src="Logo.jpg" alt="Student Hub Portal Logo">
-        </div>
-
+        <div class="header-logo"><img src="Logo.jpg" alt="Student Hub Portal Logo"></div>
         <div class="header-title">
             <h1>STUDENT HUB PORTAL</h1>
             <p>Your Gateway to Academic Information</p>
         </div>
-
+        <button type="button" data-theme-toggle>🌙 Dark Mode</button>
     </header>
 
-    <hr>
-
-    <!-- ================= NAVIGATION ================= -->
+    <div class="notification-banner" data-notification>
+        <span>📢 Welcome to Student Hub Portal! Stay updated with your academic information.</span>
+        <button type="button" data-notification-close aria-label="Close notification">✖</button>
+    </div>
 
     <nav class="navbar">
-
-        <a href="index.html" class="active">Home</a>
-
-        <a href="about.html">About Us</a>
-
-        <a href="contact.html">Contact Us</a>
-
+        <button type="button" class="menu-toggle" data-menu-toggle aria-label="Toggle navigation menu">☰ Menu</button>
+        <div class="nav-links" data-menu>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
     </nav>
 
-    <!-- ================= MAIN CONTENT ================= -->
-
     <main>
-
-        <!-- Welcome Section -->
-
         <section class="welcome-section">
-
             <h2>Welcome to Student Hub Portal</h2>
-
-            <p>
-                This portal allows students to register, log in,
-                check attendance, view fee details, access timetables,
-                and check examination results.
-            </p>
-
+            <p>This portal allows students to register, log in, check attendance, view fee details, access timetables, and check examination results.</p>
             <div class="button-container">
-
-                <a href="register.html" class="button">
-                    Register Here
-                </a>
-
-                <a href="login.html" class="button">
-                    Login Here
-                </a>
-
+                <a href="register.html" class="button">Register Here</a>
+                <a href="login.html" class="button">Login Here</a>
+                <button type="button" class="button" data-modal-open>Learn More</button>
             </div>
-
         </section>
-
-        <!-- Portal Features -->
 
         <section class="features-section">
-
             <h2>Explore Student Hub</h2>
-
             <div class="features-grid">
-
-                <article class="feature-card">
-                    <h3>📚 Attendance</h3>
-                    <p>
-                        View your attendance records
-                        and monitor your academic progress.
-                    </p>
-                </article>
-
-                <article class="feature-card">
-                    <h3>💳 Fee Details</h3>
-                    <p>
-                        Check your fee information
-                        and payment status.
-                    </p>
-                </article>
-
-                <article class="feature-card">
-                    <h3>📅 Timetable</h3>
-                    <p>
-                        Access your class timetable
-                        and stay organized.
-                    </p>
-                </article>
-
-                <article class="feature-card">
-                    <h3>📊 Results</h3>
-                    <p>
-                        View your examination results
-                        and academic performance.
-                    </p>
-                </article>
-
+                <article class="feature-card"><h3>📚 Attendance</h3><p>View your attendance records and monitor your academic progress.</p></article>
+                <article class="feature-card"><h3>💳 Fee Details</h3><p>Check your fee information and payment status.</p></article>
+                <article class="feature-card"><h3>📅 Timetable</h3><p>Access your class timetable and stay organized.</p></article>
+                <article class="feature-card"><h3>📊 Results</h3><p>View your examination results and academic performance.</p></article>
             </div>
-
         </section>
 
-        <!-- University Section -->
+        <section class="pr6-section" id="events">
+            <h2>📅 Campus Events</h2>
+            <p>Events loaded dynamically from <code>events.json</code> using the Fetch API.</p>
+            <div class="data-controls">
+                <label for="eventSearch">Search events</label>
+                <input type="search" id="eventSearch" placeholder="Search by event or location">
+                <label for="eventCategory">Filter category</label>
+                <select id="eventCategory"><option value="">All categories</option></select>
+                <label for="eventSort">Sort events</label>
+                <select id="eventSort">
+                    <option value="date-asc">Date: earliest first</option>
+                    <option value="date-desc">Date: latest first</option>
+                    <option value="title-asc">Title: A–Z</option>
+                    <option value="title-desc">Title: Z–A</option>
+                </select>
+            </div>
+            <p class="data-status" id="eventStatus" role="status">Loading events...</p>
+            <div class="data-grid" id="eventList"></div>
+            <div class="pagination">
+                <button type="button" id="eventPrev" disabled>Previous</button>
+                <span id="eventPageInfo">Page 1</span>
+                <button type="button" id="eventNext" disabled>Next</button>
+            </div>
+        </section>
+
+        <section class="pr6-section" id="students">
+            <h2>🎓 Student Directory</h2>
+            <p>Sample student records loaded from <code>students.json</code>.</p>
+            <div class="data-controls">
+                <label for="studentSearch">Search students</label>
+                <input type="search" id="studentSearch" placeholder="Search by name, ID or course">
+                <label for="studentCourse">Filter course</label>
+                <select id="studentCourse"><option value="">All courses</option></select>
+                <label for="studentSort">Sort students</label>
+                <select id="studentSort">
+                    <option value="name-asc">Name: A–Z</option>
+                    <option value="name-desc">Name: Z–A</option>
+                    <option value="studentId-asc">Student ID: low to high</option>
+                </select>
+            </div>
+            <p class="data-status" id="studentStatus" role="status">Loading students...</p>
+            <div class="data-grid" id="studentList"></div>
+            <div class="pagination">
+                <button type="button" id="studentPrev" disabled>Previous</button>
+                <span id="studentPageInfo">Page 1</span>
+                <button type="button" id="studentNext" disabled>Next</button>
+            </div>
+        </section>
+
+        <section class="pr6-section" id="json-faqs">
+            <h2>❓ FAQs from JSON</h2>
+            <p>Frequently asked questions loaded from <code>faqs.json</code>.</p>
+            <p class="data-status" id="faqStatus" role="status">Loading FAQs...</p>
+            <div id="jsonFaqList" class="json-faq-list"></div>
+        </section>
+
+        <section class="slider-section">
+            <h2>Student Hub Highlights</h2>
+            <div class="content-slider">
+                <div data-slide><h3>📚 Academic Information</h3><p>Access attendance, timetables, and examination results.</p></div>
+                <div data-slide hidden><h3>📝 Student Registration</h3><p>Create your account to access the portal.</p></div>
+                <div data-slide hidden><h3>🎓 Student Dashboard</h3><p>Explore important academic information in one place.</p></div>
+                <div class="slider-buttons"><button type="button" data-slide-prev>❮ Previous</button><button type="button" data-slide-next>Next ❯</button></div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item"><button type="button" class="faq-question" data-faq-question aria-expanded="false">How can I register?</button><div class="faq-answer" hidden>Click Register Here and complete the registration form.</div></div>
+            <div class="faq-item"><button type="button" class="faq-question" data-faq-question aria-expanded="false">How can I check my attendance?</button><div class="faq-answer" hidden>Log in to your account and open the Attendance page.</div></div>
+            <div class="faq-item"><button type="button" class="faq-question" data-faq-question aria-expanded="false">How can I view my results?</button><div class="faq-answer" hidden>Log in to your account and visit the Results page.</div></div>
+        </section>
 
         <section class="university-section">
-
             <h2>Our University</h2>
-
-            <img
-                src="Charusat.jpg"
-                alt="CHARUSAT University"
-                class="university-image"
-            >
-
-            <p>
-                Student Hub Portal helps students access
-                important academic information in one place.
-            </p>
-
+            <img src="Charusat.jpg" alt="CHARUSAT University" class="university-image">
+            <p>Student Hub Portal helps students access important academic information in one place.</p>
         </section>
-
     </main>
 
-    <!-- ================= FOOTER ================= -->
+    <div class="modal-overlay" data-modal hidden>
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button type="button" data-modal-close aria-label="Close popup">✖</button>
+            <h2 id="modal-title">About Student Hub Portal</h2>
+            <p>Student Hub Portal provides convenient access to student registration, attendance, fee details, timetables, and results.</p>
+            <button type="button" data-modal-close>Close</button>
+        </div>
+    </div>
 
     <footer class="footer">
-
         <p>© 2026 Student Hub Portal</p>
-
         <p>Designed for Student Academic Support</p>
-
     </footer>
-
 </body>
-
 </html>

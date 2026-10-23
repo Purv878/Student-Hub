@@ -1,0 +1,92 @@
+[
+    {
+        "studentId": "CE001",
+        "name": "Aarav Patel",
+        "course": "Computer Engineering",
+        "year": "2nd Year"
+    },
+    {
+        "studentId": "CE002",
+        "name": "Diya Shah",
+        "course": "Information Technology",
+        "year": "2nd Year"
+    },
+    {
+        "studentId": "CE003",
+        "name": "Krish Desai",
+        "course": "Computer Engineering",
+        "year": "1st Year"
+    },
+    {
+        "studentId": "CE004",
+        "name": "Anaya Mehta",
+        "course": "Information Technology",
+        "year": "3rd Year"
+    },
+    {
+        "studentId": "CE005",
+        "name": "Reyansh Joshi",
+        "course": "Computer Engineering",
+        "year": "2nd Year"
+    },
+    {
+        "studentId": "CE006",
+        "name": "Kiara Trivedi",
+        "course": "Information Technology",
+        "year": "1st Year"
+    },
+    {
+        "studentId": "CE007",
+        "name": "Vivaan Parmar",
+        "course": "Computer Engineering",
+        "year": "3rd Year"
+    },
+    {
+        "studentId": "CE008",
+        "name": "Aadhya Dave",
+        "course": "Information Technology",
+        "year": "2nd Year"
+    },
+    {
+        "studentId": "CE009",
+        "name": "Advait Patel",
+        "course": "Computer Engineering",
+        "year": "1st Year"
+    },
+    {
+        "studentId": "CE010",
+        "name": "Ishani Shah",
+        "course": "Information Technology",
+        "year": "3rd Year"
+    },
+    {
+        "studentId": "CE011",
+        "name": "Dhruv Pandya",
+        "course": "Computer Engineering",
+        "year": "2nd Year"
+    },
+    {
+        "studentId": "CE012",
+        "name": "Myra Bhatt",
+        "course": "Information Technology",
+        "year": "1st Year"
+    },
+    {
+        "studentId": "CE013",
+        "name": "Arjun Vyas",
+        "course": "Computer Engineering",
+        "year": "3rd Year"
+    },
+    {
+        "studentId": "CE014",
+        "name": "Sara Patel",
+        "course": "Information Technology",
+        "year": "2nd Year"
+    },
+    {
+        "studentId": "CE015",
+        "name": "Dev Shah",
+        "course": "Computer Engineering",
+        "year": "1st Year"
+    }
+]
