@@ -1,0 +1,2 @@
+ID,Timestamp,"Full Name",Email,Mobile,Department,Subject,Message,"IP Address"
+msg_6ae0d0c82922f,"2026-10-27 17:26:48","Purv Patel",25ce089@charusat.edu.in,9876543210,"Computer Engineering","Practical 7 Backend Verification","This is a genuine inquiry test submitted via HTTP POST for Practical 7 server-side processing.",127.0.0.1

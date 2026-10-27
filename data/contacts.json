@@ -1,0 +1,13 @@
+[
+    {
+        "id": "msg_6ae0d0c82922f",
+        "timestamp": "2026-10-27 17:26:48",
+        "full_name": "Purv Patel",
+        "email": "25ce089@charusat.edu.in",
+        "mobile": "9876543210",
+        "department": "Computer Engineering",
+        "subject": "Practical 7 Backend Verification",
+        "message": "This is a genuine inquiry test submitted via HTTP POST for Practical 7 server-side processing.",
+        "ip": "127.0.0.1"
+    }
+]
